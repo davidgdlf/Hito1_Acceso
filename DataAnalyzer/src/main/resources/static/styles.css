@@ -1,0 +1,73 @@
+/* Estilos para el encabezado */
+/* Estilos para el título de arriba */
+h1 {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Estilos para las celdas de la tabla */
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Estilos para las filas impares */
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para el encabezado de la tabla */
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Estilos para los títulos de las tarjetas */
+.card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los párrafos de las tarjetas */
+.card-text {
+    font-size: 16px;
+}
+
+/* Estilos para los botones de las tarjetas */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}

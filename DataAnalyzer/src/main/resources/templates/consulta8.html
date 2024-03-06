@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Consulta 8 - Resultados</title>
+</head>
+<body>
+<h1>Consulta 8 - Resultados</h1>
+<p class="lead">Esta consulta muestra una tabla que presenta el total de datos por año y el número de hombres para cada año, considerando solo aquellos con un valor superior a 80. Se muestra el año y el total de hombres para cada año.</p>
+<table>
+  <thead>
+  <tr>
+    <th>Año</th>
+    <th>Total Hombres</th>
+  </tr>
+  </thead>
+  <tbody>
+  <!-- Utilizamos Thymeleaf para iterar sobre la lista de resultados y mostrar cada fila -->
+  <tr th:each="resultado : ${resultados}">
+    <td th:text="${resultado[0]}"></td>
+    <td th:text="${resultado[1]}"></td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>

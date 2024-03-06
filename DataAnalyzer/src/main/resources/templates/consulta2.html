@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Consulta 2 - Resultados</title>
+</head>
+<body>
+<h1>Consulta 2 - Resultados</h1>
+<p class="lead">Esta consulta muestra una tabla que presenta la tasa de actividad por género utilizando los datos del INE. Se muestra el sexo y el total de registros para cada género, ordenados de forma descendente por el total.</p>
+</div>
+<table>
+    <thead>
+    <tr>
+        <th>Sexo</th>
+        <th>Total</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Utiliza el índice 0 y 1 para acceder a los valores de sexo y total en el array -->
+    <tr th:each="dato : ${resultados}">
+        <td th:text="${dato[0]}"></td>
+        <td th:text="${dato[1]}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Consulta 1</title>
+</head>
+<body>
+<h1>Consulta 1 - Resultados</h1>
+<p class="lead">Esta consulta muestra una tabla con todos los datos disponibles en la base de datos del INE, incluyendo el ID, el sexo y el año de cada registro.</p>
+</div>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Sexo</th>
+        <th>Año</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Aquí utilizamos Thymeleaf para iterar sobre la lista de datos y mostrar cada fila -->
+    <tr th:each="dato : ${datos}">
+        <td th:text="${dato.id}"></td>
+        <td th:text="${dato.sexo}"></td>
+        <td th:text="${dato.año}"></td>
+
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
